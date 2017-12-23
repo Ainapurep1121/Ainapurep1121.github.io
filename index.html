@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html>
+	<head>
+		<style>
+		body {background-color: #87bbdb;}
+		h1 	 {color: white;
+			  font-family: Arial,Verdana,Times New Roman;
+		
+		}
+		</style>
+		<title>Root/Main_Page</title>
+	</head>
+	<body>
+	<div style="text-align:center">
+	<h1 onmouseover = "colswap(this)" onmouseout = "colstate(this)" border = "0"
+>This website is under development.</h1></div>
+	
+	<img onmouseover = "big(this)" onmouseout = "norm(this)" 
+	border = "0"
+	src="headshot.png" alt="professional"
+	width = "300" height = "400" >
+	
+	<!-- Fancy pants image resizing -->
+	
+	
+	<script>
+		function big(x) {
+		x.style.width = "450px";
+		x.style.height = "600px"; }
+		function norm(x) {
+		x.style.width = "300px"
+		x.style.height = "400px"
+						} 
+		function colswap(x){
+			x.style.color = "black";}
+		function colstate(x) { x.style.color = "white";}
+	</script>
+	
+	
+	
+	
+	
+	
+	</body>
+</html>
+
