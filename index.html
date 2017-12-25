@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<style>
-		body {background-color: #87bbdb;}
+		body {background-color: #2274a5;}
 		h1 	 {color: white;
 			  font-family: Arial,Verdana,Times New Roman;
 		
@@ -11,16 +11,111 @@
 		</style>
 		<title>Pratik</title>
 	</head>
+	<style>
+	body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #32936f;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #ffbf00;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left 1s;
+    padding: 16px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+		</style>
+	</head>
 	<body>
-	<div style="text-align:left">
-	<a href="Projects.html"><button>See My Projects!</button></a>
+	<div id="DivForHoverItem">
+  <div id="HiddenText"></div>
+</div>
+
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onmouseout="closeNav()">&times;</a>
+	  <a href="Aboutme.html">About Me</a>
+	  <a href="Projects.html">Projects</a>
+	  <a href="Random.html">Cool Stuff</a>
+	  <a href="#">Contact</a>
 	</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onmouseover="openNav()">&#9776; Click Here to Browse</span>
+  <h2>Website Under Development</h2>
+  <p>Hello!<br /> My name is Pratik Ainapure. I am a junior studying Electrical Engineering with a minor in Computer Science at the University of Illinois at Urbana Champaign.
+	I'm someone that loves to explore there interests, one of them being web development! Feel free to browse through these tabs to see my other projects hardware and software included. 
+	Thank you for visiting my website!</p>
+	<p><br /></p>
+	<p><br /></p>
+	 <img align = "middle" src = "Image Assets/rishta.jpg" alt = "Profile Picture" width="400" height="400">
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(34,116,165,.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "rgba(34,116,165,1)";
+}
+</script>
+     
+	
+	<!--
 	<div style="text-align:left">
-	<a href="Aboutme.html"><button>Learn More About me</button></a>
+	<a href="Projects.html"><button> Projects!</button></a>
 	</div>
-	<div style="text-align:left">
-	<a href="Random.html"><button>Things I find Really Cool</button></a>
+	<div style="text-align:center">
+	<a href="Aboutme.html"><button>About Me</button></a>
 	</div>
+	<div style="text-align:right">
+	<a href="Random.html"><button>Really Cool Stuff</button></a>
+	</div>
+	
+	-->
+	<!--Front Page Content
+	
 	<div style="text-align:center">
 	<h1 onmouseover = "colswap(this)" onmouseout = "colstate(this)" border = "0"
 >This website is under development.</h1></div>
@@ -29,9 +124,7 @@
 	border = "0"
 	src="rishta.jpg" alt="professional"
 	width = "400" height = "400" >
-	
-	<!-- Fancy pants image resizing -->
-	
+	-->
 	
 	<script>
 		function big(x) {
